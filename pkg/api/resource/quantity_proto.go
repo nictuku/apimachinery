@@ -19,11 +19,7 @@ package resource
 import (
 	"fmt"
 	"io"
-
-	"github.com/gogo/protobuf/proto"
 )
-
-var _ proto.Sizer = &Quantity{}
 
 func (m *Quantity) Marshal() (data []byte, err error) {
 	size := m.Size()
